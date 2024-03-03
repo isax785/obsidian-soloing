@@ -4,6 +4,7 @@
 
 ![img](img/SoloingDark.png)
 
+
 ![img](img/SoloingLight.png)
 
 # Installation
@@ -19,4 +20,5 @@ Enjoy!✨
 
 ---
 
-[GitHub Link](git@github.com:isax785/obsidian-sparkling-night.git)
+[GitHub Link](https://github.com/isax785/obsidian-soloing)
+
