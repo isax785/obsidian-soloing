@@ -135,11 +135,11 @@
     .tag {
       color: var(--dark-link) !important;
     }
-
+    
     /* Explorer */
     --folder-title-color: var(--floral-white);
     --file-title-color: var(--floral-white);
-    --file-content: '📜 '; /*F4C88C*/
+    --file-content: '📄 ';
     --folder-filter: invert(51%) sepia(51%) saturate(596%) hue-rotate(89deg) brightness(89%) contrast(84%)
   }
   
@@ -175,6 +175,7 @@
     --code-function-color: var(--bittersweet);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
+    --code-text-size: 0.85rem;
     
     /* Inline Code */
     .cm-s-obsidian span.cm-inline-code  {
@@ -219,6 +220,16 @@
   color: var(--links-color);
 }
 
+/* ----------- Quotes ----------- */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote, .markdown-rendered blockquote {
+  font-style: var(--quote-style);
+  font-size: 0.9em;
+  background-color: var(--quote-background);
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+}
+
 /* ----------- Tables ----------- */
 
 table {
@@ -254,9 +265,9 @@ img {display:block;
 /* ----------- Code - Code Block ----------- */
 
 pre code { 
-  background-color: var(--codeblock-background) !important;
-  border: var(--codeblock-background) !important;
-  color: var(--codeblock-color)!important;
+    background-color: var(--codeblock-background) !important;
+    border: var(--codeblock-background) !important;
+    color: var(--codeblock-color)!important;
 }
 
 .markdown-rendered pre {
@@ -266,37 +277,37 @@ pre code {
 pre[class*="language-"], 
 code[class*="language-"]
 {
-  background: var(--codeblock-background);
-  color: var(--codeblock-color)!important;
+    font-size: var(--code-text-size)!important;
+    background: var(--codeblock-background)!important;
+    color: var(--codeblock-color)!important;
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg, 
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  background-color: var(--codeblock-background);
+    background-color: var(--codeblock-background);
 }
 
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  left: 0;
-  right: 0;
-  background-color: var(--codeblock-background);
+    left: 0;
+    right: 0;
+    background-color: var(--codeblock-background);
 }
 
 .cm-inline-code{
-  background-color: var(--inline-code-background)!important;
-  /* color: var(--inline-code-color)!important; */
-  font-size: 0.9rem!important;
-  padding: 3px 4px;
-  border-radius: 5px;
-  font-size: 0.85em!important;
+    background-color: var(--inline-code-background)!important;
+    color: var(--inline-code-color)!important;
+    font-size: var(--code-text-size)!important;
+    padding: 3px 4px;
+    border-radius: 5px;
 }
 
 .markdown-rendered code {
-  background-color: var(--codeblock-background)!important;
-  /* color: var(--white); */
-  color: var(--inline-code-color);
-  font-size: 0.9rem;
-  padding: 3px 4px;
-  border-radius: 5px;
+    background-color: var(--codeblock-background)!important;
+    /* color: var(--white); */
+    color: var(--inline-code-color);
+    font-size: var(--code-text-size)!important;
+    padding: 3px 4px;
+    border-radius: 5px;
 }
 
 /* code styling */
