@@ -101,6 +101,7 @@
     --code-string-color: var(--gold-light);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
+    --code-text-size: 0.85rem;
 
     /* Quotes */
     --blockquote-background-color: var(--dark-code-background);
