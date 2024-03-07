@@ -63,9 +63,9 @@
     --light-code: var(--dark-mint);
     --light-link: var(--light-mint);
     --light-code-background: #f3f6fc;
-
+    
   }
-
+  
   
   .theme-dark {
     --checklist-done-decoration: none;
@@ -101,8 +101,9 @@
     --code-string-color: var(--gold-light);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.85rem;
-
+    --code-text-size: 0.9rem;
+    --code-size: 0.9rem;
+    
     /* Quotes */
     --blockquote-background-color: var(--dark-code-background);
     --blockquote-border-color: var(--dark-accent);
@@ -112,7 +113,7 @@
     .cm-strong {
       color: var(--bold-color) !important;
     }
-	
+    
     /* Inline Code */
     .cm-s-obsidian span.cm-inline-code  {
       color: var(--dark-code) !important;
@@ -120,7 +121,7 @@
     .markdown-rendered code {
       color: var(--dark-code);
     }
-
+    
     /* Links */
     .cm-s-obsidian span.cm-link {
       color: var(--dark-link) !important;
@@ -176,7 +177,8 @@
     --code-function-color: var(--bittersweet);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.85rem;
+    --code-text-size: 0.9rem;
+    --code-size: 0.9rem;
     
     /* Inline Code */
     .cm-s-obsidian span.cm-inline-code  {
@@ -311,10 +313,11 @@ code[class*="language-"]
     border-radius: 5px;
 }
 
+
 /* code styling */
 
 .cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {color: var(--code-variable-color)!important;} /* variable */
-.cm-def.cm-hmd-codeblock, .token.function{
+.cm-def.cm-hmd-codeblock, .token.function, .token.class-name{
   color: var(--code-function-color)!important;
   text-emphasis: italic;
 } /* function name in declaration */
