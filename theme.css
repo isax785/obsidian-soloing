@@ -101,7 +101,7 @@
     --code-string-color: var(--gold-light);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.9rem;
+    --code-text-size: 0.9em;
     --code-size: 0.9rem;
     
     /* Quotes */
@@ -177,7 +177,7 @@
     --code-function-color: var(--bittersweet);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.9rem;
+    --code-text-size: 0.9em;
     --code-size: 0.9rem;
     
     /* Inline Code */
