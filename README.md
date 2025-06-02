@@ -19,6 +19,11 @@ To install the theme
 
 Enjoy!✨
 
+# What's New
+
+## `1.1.0`
+
+- new highlight coloring and padding
 
 ---
 

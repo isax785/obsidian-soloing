@@ -84,6 +84,8 @@
     --italic-color: var(--dark-link); */
     --bold-color: var(--dark-link);
     --link-color: var(--dark-link);
+    --highlight-bg-color: var(--dark-link);
+    --highlight-text-color: var(--rich-black);
     
     /* Checkboxes  */
     --checkbox-color: var(--dark-link);
@@ -101,7 +103,7 @@
     --code-string-color: var(--gold-light);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.9rem;
+    --code-text-size: 0.9em;
     --code-size: 0.9rem;
     
     /* Quotes */
@@ -161,6 +163,8 @@
     --bold-color: var(--light-code);
     /* --italic-color: var(--light-link); */
     --link-color: var(--light-link);
+    --highlight-bg-color: var(--light-link);
+    --highlight-text-color: var(--rich-black);
     
     /* Checkboxes  */
     --checkbox-color: var(--light-link);
@@ -177,7 +181,7 @@
     --code-function-color: var(--bittersweet);
     --code-operator-color: var(--mint);
     --code-comment-color: var(--cool-gray);
-    --code-text-size: 0.9rem;
+    --code-text-size: 0.9em;
     --code-size: 0.9rem;
     
     /* Inline Code */
@@ -221,6 +225,14 @@
 
 .external-link {
   color: var(--links-color);
+}
+
+/* ----------- Highlight ----------- */
+
+.cm-s-obsidian span.cm-highlight {
+  background-color: var(--highlight-bg-color);
+  color: var(--highlight-text-color);
+  padding: 2px 2px 2px 2px;
 }
 
 /* ----------- Quotes ----------- */
@@ -313,8 +325,7 @@ code[class*="language-"]
     border-radius: 5px;
 }
 
-
-/* code styling */
+/* ----------- Code Styling ----------- */
 
 .cm-link, .cm-variable, .cm-variable-2, .cm-variable-3 {color: var(--code-variable-color)!important;} /* variable */
 .cm-def.cm-hmd-codeblock, .token.function, .token.class-name{
