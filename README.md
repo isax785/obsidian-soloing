@@ -2,8 +2,6 @@
 
 `Soloing` is a dark and light theme with highly functional colors for note taking. 
 
-
-
 ![img](img/SoloingDark.png)
 
 
