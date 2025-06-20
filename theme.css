@@ -65,7 +65,8 @@
     --light-accent: var(--light-mint);
     --light-code: var(--dark-mint);
     --light-link: var(--light-mint);
-    --light-code-background:#dee1e7;
+    /* --light-code-background:#dee1e7; */
+    --light-code-background: var(--background-2nd-light);
   }
   
   
